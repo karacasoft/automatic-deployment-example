@@ -10,9 +10,11 @@ describe('DBManager abstract class', () => {
 
     describe('#save', () => {
         it('should throw an error', async () => {
+
             expect(() => {
                 dbManager.save('key', 'value');
             }).toThrow();
+            
         });
     });
 

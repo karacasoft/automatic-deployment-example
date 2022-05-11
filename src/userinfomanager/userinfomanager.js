@@ -17,7 +17,7 @@ class UserInfoManager {
      * Saves the class field user into the database
      */
     saveUserInfo() {
-        
+        this._dbManager.save('userInfo', this.user);
     }
 
     /**
@@ -25,7 +25,7 @@ class UserInfoManager {
      * class field user
      */
     loadUserInfo() {
-
+        this.user = this._dbManager.get('userInfo');
     }
 }
 
